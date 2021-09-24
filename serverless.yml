@@ -1,0 +1,25 @@
+service: blog-ssr
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: 20201221
+  region: eu-west-2
+
+package:
+  individually: true
+  exclude:
+    - ./**
+  include:
+    - build/server/**
+
+functions:
+  svelte:
+    handler: build/server/serverless.handler
+    memorySize: 256
+    timeout: 15
+    events:
+      - http: ANY /
+      - http: ANY /{proxy+}

@@ -1,0 +1,9 @@
+#typewriter a:link,
+#typewriter a:visited {
+    color: #e83e8c;
+    text-decoration: none;
+}
+
+#typewriter a:hover {
+    text-decoration: underline;
+}
