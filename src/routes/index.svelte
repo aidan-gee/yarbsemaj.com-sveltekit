@@ -28,9 +28,10 @@
 				'Lambda',
 				'Webpack',
 				'AngularJS',
+				'<a href="https://tiny-cpu-emu.yarbsemaj.com">Tiny CPU Assembly</a>',
 				'Javascript',
 				'Java'
-			],
+			].sort(() => Math.random() - 0.5),
 			autoStart: true,
 			loop: true
 		});
