@@ -24,7 +24,7 @@
 				'NodeJS',
 				'Serverless',
 				'HTML',
-				'Dynanamo DB',
+				'DynamoDB',
 				'Lambda',
 				'Webpack',
 				'AngularJS',
